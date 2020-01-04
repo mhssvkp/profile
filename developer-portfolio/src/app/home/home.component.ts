@@ -8,8 +8,8 @@ import { Router, Scroll } from '@angular/router';
 })
 export class HomeComponent implements OnInit,OnDestroy {
 
-  private count :number=10;
-  private intervelId:any;
+  count :number=10;
+  intervelId:any;
   constructor(private router:Router) { }
 
   ngOnInit() {
