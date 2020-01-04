@@ -10,8 +10,8 @@ import { Route } from '@angular/compiler/src/core';
 })
 export class NavBarComponent implements OnInit {
 
-  private collapsed : boolean = true;
-  private active : string;
+  collapsed : boolean = true;
+  active : string;
 
   constructor(private route: Router) {
      route.events.subscribe((val)=> { 

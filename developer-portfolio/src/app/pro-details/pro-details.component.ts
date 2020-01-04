@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProDetailsComponent implements OnInit {
 
-  private isTimeline:boolean=true;
+  isTimeline:boolean=true;
   constructor() { }
 
   ngOnInit() {
