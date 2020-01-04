@@ -1,0 +1,21 @@
+.heading{
+    font-size: 10vw;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.counter{
+    font-size: 3vw;
+}
+
+.info{
+    font-size: 2vw;
+}

@@ -1,0 +1,22 @@
+<div class="nav-container">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">MHSSVPK</a>
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()" data-toggle="collapse"
+      data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse" [ngClass]="{'collapse':collapsed}" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" [ngClass]="{'active':active=='home'}" routerLink="home">Home</a>
+        <a class="nav-item nav-link" [ngClass]="{'active':active=='professioanlDetails'}"
+          routerLink="professioanlDetails">Professional Details</a>
+        <a class="nav-item nav-link" [ngClass]="{'active':active=='personalDetails'}"
+          routerLink="personalDetails">Personal Interests</a>
+        <a class="nav-item nav-link" [ngClass]="{'active':active=='otherProfiles'}" routerLink="otherProfiles">Other
+          Profiles</a>
+        <a class="nav-item nav-link" [ngClass]="{'active':active=='about'}" routerLink="about">About</a>
+      </div>
+    </div>
+  </nav>
+</div>

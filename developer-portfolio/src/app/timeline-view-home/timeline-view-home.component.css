@@ -1,0 +1,39 @@
+.container {
+    width: 60vw;
+    margin: auto;
+}
+
+.content {
+    border-top: 2px solid;
+    border-color: blue !important;
+    margin:0; 
+    padding: 30px;
+}
+  
+  
+.content:nth-child(even) {
+    border-left: 2px dashed;
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    margin-right: 2vw; 
+    padding-right: 0;
+}
+  
+.content:nth-child(odd) {
+    border-right: 2px dashed;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    margin-left: 2vw; 
+    padding-left: 0;
+}
+  
+.content:first-child {
+    border-top: 0;
+    border-top-right-radius:0;
+    border-top-left-radius:0;
+}
+  
+.content:last-child {
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+}
