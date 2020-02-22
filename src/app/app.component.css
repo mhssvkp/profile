@@ -1,0 +1,32 @@
+.container::after{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.2;
+    content: url('../assets/images/pavan.jpg');
+    /* content: linear-gradient(to bottom right, rgb(255, 255, 255) rgb(199, 199, 199)); */
+    z-index: -1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.container{
+    margin-top: 75px;
+    max-height: 85vh;
+    overflow-y: scroll;
+}
+
+/* .navbar{
+    position: sticky;
+    position: -webkit-sticky;
+} */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }

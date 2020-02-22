@@ -1,0 +1,87 @@
+<div class="tech-details-container">
+    <div class="table-container">
+        <table>
+            <tr>
+                <ng-template ngFor let-header [ngForOf]="headers">
+                <th>
+                    {{header.value}}
+                </th>
+            </ng-template>
+            </tr>
+            <ng-template ngFor let-data [ngForOf]="tableData">
+            <tr class="data">
+                    <td>
+                        {{data['tech-fw']}}
+                    </td>
+                    <td>
+                        {{data['rating']}}
+                    </td>
+            </tr>
+        </ng-template>
+        </table>
+    </div>
+    
+    <div class="details">
+        <p class="heading">
+            Working experiences Other than mentioned technologies
+        </p>
+        <ul>
+            <li>
+                Working experience in implementing custom DSA(data structures and algorithms) as per requirements.
+            </li>
+            <li>
+                Experience in developing visualisations like graphs and charts using D3.js and Highcharts.
+            </li>
+            <li>
+                Have experience in Secure coding practices for Fortify Security Vulnerabilities.
+            </li>
+            <li>
+                Have working experience with Kafka for notification and messaging systems.
+            </li>
+            <li>
+                Worked on Authentication and Autherization with Keycloak Open source.
+            </li>
+            <li>
+                Worked on file content extraction library Apache Tika.
+            </li>
+            <li>
+                Experience with application servers like Tomcat and Nginx.
+            </li>
+        </ul>
+    </div>
+    
+    <div class="details">
+        <p class="heading">
+            Common Roles and Responsibilites
+        </p>
+        <ul>
+            <li>
+                Give KT(Knowlwdge Transfer) to new joiners in project.
+            </li>
+            <li>
+                Participate in peer code reviewing.
+            </li>
+            <li>
+                Brainstorming with team on critical process flows and come up with a simplistic solution.
+            </li>
+            <li>
+                Experience in working in Agile development.
+            </li>
+            <li>
+                Leading team and take ownership on a feature development.
+            </li>
+            <li>
+                To be able to adapt and scale simple POC's(proof of concept) on latest technologies.
+            </li>
+            <li>
+                Document newly developed feature for future references.
+            </li>
+            <li>
+                Design and Develop UI screens, that contain various functionalities and complex data to be handled.
+            </li>
+            <li>
+                Design and Develop API's that are readable, maintainable and extensible.
+            </li>
+        </ul>
+    </div>
+</div>

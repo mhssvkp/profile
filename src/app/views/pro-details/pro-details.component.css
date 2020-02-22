@@ -1,0 +1,33 @@
+
+.btn-tech-profile{
+    position: sticky;
+    position: -webkit-sticky;
+    width: 50%;
+    border: none;
+    color: white;
+    background-color: #919191;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.btn-tech-profile:hover{
+    background-color: rgb(99, 99, 99);
+}
+
+.btn-selected{
+    position: sticky;
+    position: -webkit-sticky;
+    width: 50%;
+    border: none;
+    color: white;
+    background-color: rgb(99, 99, 99);
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.left{
+    left:50%;
+}
+.right{
+    right: 50%;
+}

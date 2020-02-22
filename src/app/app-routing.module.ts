@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { PersonalDetailsComponent } from './personal-details/personal-details.component';
-import { ProDetailsComponent } from './pro-details/pro-details.component';
-import { TechProfilesComponent } from './tech-profiles/tech-profiles.component';
+import { HomeComponent } from './views/home/home.component';
+import { AboutComponent } from './views/about/about.component';
+import { PersonalDetailsComponent } from './views/personal-details/personal-details.component';
+import { ProDetailsComponent } from './views/pro-details/pro-details.component';
+import { TechProfilesComponent } from './views/tech-profiles/tech-profiles.component';
 
 const routes: Routes = [
   {path: "home", component: HomeComponent},
@@ -13,7 +13,7 @@ const routes: Routes = [
   {path: "professioanlDetails", component: ProDetailsComponent},
   {path: "otherProfiles", component: TechProfilesComponent},
   {path:'',redirectTo:'/home',pathMatch:'full'},
-  {path:'*.*',redirectTo:'/home'  }
+  {path:'**',redirectTo:'/home'}
 ];
 
 @NgModule({

@@ -1,0 +1,114 @@
+/* .container {
+    width: 60vw;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.content {
+    border-top: 2px solid;
+    border-color: black;
+    margin:0; 
+    padding: 30px;
+}
+  
+  
+.content:nth-child(even) {
+    border-left: 2px dashed;
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    margin-right: 2vw; 
+    padding-right: 0;
+}
+  
+.content:nth-child(odd) {
+    border-right: 2px dashed;
+    border-top-right-radius: 2vw;
+    border-bottom-right-radius: 2vw;
+    margin-left: 2vw; 
+    padding-left: 0;
+}
+  
+.content:first-child {
+    border-top: 0;
+    border-top-right-radius:0;
+    border-top-left-radius:0;
+}
+  
+.content:last-child {
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+} */
+
+.timeline-container{
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+main {
+    margin: auto;
+  }
+  
+ main div {
+    font-size: 1em;
+    line-height: 1.75em;
+    border-top: 3px solid;
+    -webkit-border-image: -webkit-gradient(linear, left top, right top, from(#a1a1a1), to(#000000));
+    -webkit-border-image: linear-gradient(to right, #a1a1a1 0%, #000000 100%);
+         -o-border-image: linear-gradient(to right, #a1a1a1 0%, #000000 100%);
+            border-image: -webkit-gradient(linear, left top, right top, from(#a1a1a1), to(#000000));
+            border-image: linear-gradient(to right, #a1a1a1 0%, #000000 100%);
+    border-image-slice: 1;
+    border-width: 3px;
+    margin: 0;
+    padding: 40px;
+    counter-increment: section;
+    position: relative;
+    color: #34435E;
+  }
+  main div:before {
+    content: counter(section);
+    position: absolute;
+    border-radius: 50%;
+    padding: 3px;
+    height: 1.50em;
+    width: 1.50em;
+    background-color: #34435E;
+    text-align: center;
+    line-height: 1.25em;
+    color: #ffffff;
+    font-size: 1em;
+  }
+  
+  main div:nth-child(odd) {
+    border-right: 3px solid;
+    padding-left: 0;
+  }
+ main div:nth-child(odd):before {
+    left: 100%;
+    margin-left: -10px;
+  }
+  
+ main div:nth-child(even) {
+    border-left: 3px solid;
+    padding-right: 0;
+  }
+ main div:nth-child(even):before {
+    right: 100%;
+    margin-right: -10px;
+  }
+  
+ main div:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  
+ main div:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  

@@ -1,0 +1,23 @@
+img{
+    height: 50px;
+}
+
+.profiles{
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+}
+
+.label-text{
+    margin: 5px;
+}
+
+.heading{
+    font-size: 36px;
+}

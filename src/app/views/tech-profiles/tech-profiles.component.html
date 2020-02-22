@@ -1,0 +1,22 @@
+<div class="profiles-container">
+  <div>
+  <p class="heading">Social Profiles</p>
+  <div id="socialProfiles" class="profiles">
+    <div *ngFor="let sprofile of sprofiles;i as index;">
+        <div (click)="onClick(sprofile.link)" class="profile">
+          <img [id]="i" [src]="sprofile.src"/><span class="label-text">{{sprofile.label}}</span>
+        </div>
+    </div>
+  </div>
+</div>
+<div>
+  <p class="heading">Prefessional Profiles</p>
+  <div id="socialProfiles" class="profiles">
+    <div *ngFor="let tprofile of techProfiles;i as index;">
+        <div (click)="onClick(tprofile.link)" class="profile">
+          <img [id]="i" [src]="tprofile.src"/><span class="label-text">{{tprofile.label}}</span>
+        </div>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,39 @@
+<div class="personal-details-container">
+  <div id="games">
+    <p class="heading">Games/Sports</p>
+    <div class="cards-container">
+      <div class="data-card card" *ngFor="let game of games;i as index;">
+        <img [id]="i" [src]="game.src" />
+        <label [for]="game.name">{{game.name}}</label>
+      </div>
+    </div>
+  </div>
+  <div id="hobbies">
+    <p class="heading">Hobbies</p>
+    <div class="cards-container">
+      <div class="data-card card" *ngFor="let hobbie of hobbies;i as index;">
+        <img [id]="i" [src]="hobbie.src" />
+        <label [for]="hobbie.name">{{hobbie.name}}</label>
+      </div>
+    </div>
+  </div>
+  <div id="admirations">
+    <p class="heading">People I follow</p>
+    <div class="cards-container">
+      <div class="data-card card" *ngFor="let admiration of admirations;i as index;">
+        <img [id]="i" [src]="admiration.src" />
+        <label [for]="admiration.name">{{admiration.name}}</label>
+      </div>
+    </div>
+  </div>
+  <div id="spirutuals">
+    <p class="heading">Spiritual Interests</p>
+    <div class="cards-container">
+      <div class="data-card card" *ngFor="let spirutual of spirutuals;i as index;">
+        <img [id]="i" [src]="spirutual.src" />
+        <label [for]="spirutual.name">{{spirutual.name}}</label>
+      </div>
+    </div>
+    <p><strong>Note :</strong> These are my favourites, I have a long list, we can talk about the sometime when we meet.</p>
+  </div>
+</div>
