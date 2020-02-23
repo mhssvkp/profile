@@ -6,14 +6,14 @@ import { PersonalDetailsComponent } from './views/personal-details/personal-deta
 import { ProDetailsComponent } from './views/pro-details/pro-details.component';
 import { TechProfilesComponent } from './views/tech-profiles/tech-profiles.component';
 
+// {path: "about", component: AboutComponent},
 const routes: Routes = [
-  {path: "home", component: HomeComponent},
-  {path: "about", component: AboutComponent},
-  {path: "personalDetails", component: PersonalDetailsComponent},
-  {path: "professioanlDetails", component: ProDetailsComponent},
-  {path: "otherProfiles", component: TechProfilesComponent},
-  {path:'',redirectTo:'/home',pathMatch:'full'},
-  {path:'**',redirectTo:'/home'}
+  { path: "home", component: HomeComponent },
+  { path: "personalDetails", component: PersonalDetailsComponent },
+  { path: "professioanlDetails", component: ProDetailsComponent },
+  { path: "otherProfiles", component: TechProfilesComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/home' }
 ];
 
 @NgModule({
